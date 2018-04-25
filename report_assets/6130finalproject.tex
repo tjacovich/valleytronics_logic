@@ -1,0 +1,71 @@
+\documentclass{beamer}
+\usetheme{PaloAlto}
+\usepackage{float}
+\usecolortheme{whale}
+\title[Simulating Valleytronics Logic at the Gate Level] % (optional, only for long titles)
+{Simulating Valleytronics Logic at Gate Level}
+\subtitle{A C++ Library and Example for Building Fully Electric Valleytronic Processors}
+\author[Author] % (optional, for multiple authors)
+{T. Jacovich\inst{1}}
+\institute[Universities Here and There] % (optional)
+{
+ % \inst{1}%
+  %Department of Electrical and Computer Engineering\\
+  %The George Washington University
+  %\and
+  \inst{1}%
+  Department of Physics\\
+  The George Washington University
+}
+\date[AM2018] % (optional)
+{ECE 6120: Advanced Microarchitecture Final Presentation}
+\subject{Computer Science}
+\begin{document}
+\frame{\titlepage}
+\section[Introduction]{Introduction}
+  \subsection[What is Valleytronics]{What is Valleytronics}
+  \begin{frame}
+    \frametitle{Introduction to Valleytronics}
+    \framesubtitle{}
+    
+\begin{itemize}
+  \item[$\bullet$] Aegis is a buckler(shield) wielded by Athena and given to her by Zeus.
+  
+  \item[$\bullet$] It is also the name of a near-ship anti-missile defense system.     
+\end{itemize}
+
+
+  \end{frame}
+    \subsection[Design Requirements]{Design Requirements}
+  \begin{frame}
+    \frametitle{Design Requirements}
+    \small The AEGIS Architecture is a processor designed to provide secure and verifiable computation when the only trusted component is the CPU package (and, optionally, a portion of the kernel known as \textit{SKernel})
+     This requires:
+    \begin{itemize}
+  \item[$\bullet$] Memory Integrity Verification
+  
+  \item[$\bullet$] Encryption/Decryption of Off-Chip Memory
+  
+  \item[$\bullet$] Secure Context Manager
+\end{itemize}
+\vspace*{20pt}
+ \small We will break each of these sections down and discuss its specific implementation in AEGIS 
+\vspace*{20pt}
+  \end{frame}
+  
+\section[The AEGIS Architecture]{The AEGIS Architecture}
+\begin{frame}
+\frametitle{The AEGIS Architecture}
+\begin{figure}
+ 		 \includegraphics[scale=0.2]{AEGIS.png}
+  	\end{figure}
+
+\end{frame}
+\subsection[Tamper-Evident Processing]{Tamper-Evident Processing}
+\begin{frame}
+\frametitle{Tamper-Evident Processing}
+Verifiable computations need a way to identify and prevent operations from being tampered with. 
+
+
+\end{frame}
+\end{document}
