@@ -1,10 +1,13 @@
 #include<stdlib.h>
 #include <iostream>
 #include <vector>
+
 #include "logic.h"
 #include "gates.h"
+
 #define V_ref   10 
 #define V_S   10 
+
 typedef std::vector<double> valley_volt;
 
 c_vlogic :: c_vlogic(){}
@@ -12,6 +15,7 @@ c_vlogic :: c_vlogic(){}
 c_vlogic :: ~c_vlogic(){}
 
 c_valley valley;
+
 
 valley_volt c_vlogic :: vnand_half_adder(double V1, double V2)
 {
@@ -39,6 +43,8 @@ valley_volt c_vlogic :: vnand_half_adder(double V1, double V2)
   return S;
 }
 
+
+
 valley_volt c_vlogic :: vnand_full_adder(double V1, double V2, double V3)
 {
   valley_volt Vhalf(4);
@@ -62,4 +68,54 @@ valley_volt c_vlogic :: vnand_full_adder(double V1, double V2, double V3)
   Vreturn[2] = Vcarry[0];
   
   return Vreturn; 
+}
+
+
+
+valley_volt c_vlogic :: vnand_8bit_adder(valley_volt N1, valley_volt N2)
+{
+  if(N1.size()!=16)
+   {
+     std::cout<<"Invalid number format N1. Should be valley 8b.";
+     exit(EXIT_FAILURE);
+   }
+  
+  if(N2.size()!=16)
+   {
+     std::cout<<"Invalid number format N2. Should be valley 8b.";
+     exit(EXIT_FAILURE);
+   }
+
+  double temp;
+  double temp1;
+  double temp2;
+
+  temp = N1[14];
+  temp1 = N2[14];
+
+  valley_volt Vhalf(4);
+  Vhalf = vnand_half_adder(temp, temp1);
+  temp2 = Vhalf[2];
+ 
+  valley_volt Nout(16);
+  
+  Nout[14] = Vhalf[0];
+  Nout[15] = Vhalf[1];
+
+  for(int i = 0; i< 7; i++)
+  {
+    temp = N1[12-2*i];
+    temp1 = N2[12-2*i];
+
+    valley_volt Vfull(3);
+    
+    Vfull = vnand_full_adder(temp, temp1, temp2);
+    
+    temp2 = Vfull[2];
+
+    Nout[12-2*i] = Vfull[0];
+    Nout[13-2*i] = Vfull[1];
+  }
+  
+ return Nout;
 }
