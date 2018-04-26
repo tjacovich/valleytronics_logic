@@ -15,8 +15,7 @@ class c_valley
   	void* vand();
   	valley_volt vnand(double V_G1, double V_G2, double VS, double V_ref);
   	valley_volt vor(double V_G1, double V_G2, double VS, double V_ref);
-  	void* vxor();
-  	void* vxnor();
+  	valley_volt vxor(double V_G1, double V_G2, double VS, double V_ref);
 };
 
 

@@ -98,14 +98,22 @@ valley_volt c_valley :: vor(double V_G1, double V_G2, double V_S, double V_ref)
   return Vout;
 }
 
-void* c_valley :: vxor()
+valley_volt c_valley :: vxor(double V_G1, double V_G2, double V_S, double V_ref)
 {
+  valley_volt v1(2);
+  v1 = vnand(V_G1, V_G2, V_S, V_ref);
+  double temp = v1[0];
+  
+  valley_volt v2(2);
+  valley_volt v3(2);
+  v2 = vnand(V_G1,temp,V_S,V_ref); 
+  v3 = vnand(temp,V_G2,V_S,V_ref);
+  double temp1 = v2[0];
+  double temp2 = v3[0];
 
-}
-
-void* c_valley :: vxnor()
-{
-
+  valley_volt Vout(2);
+  Vout = vnand(temp1,temp2,V_S,V_ref);
+  return Vout;
 }
 
 c_valley :: ~c_valley(){}
