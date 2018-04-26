@@ -4,47 +4,52 @@
 
 #include "logic.h"
 #include "gates.h"
+#include "parameters.h"
 
-#define V_ref   10 
-#define V_S   10 
+/*These are all the available higher order logic functions.
+ * currently, they cover integer arithmetic and some bitwise operations
+ * but are currently being hindered by the difficulty of implementing a 
+ * flip-flop that respects the valley polarization when holding a polarized
+ * bit*/
 
+//defines the valley current type
 typedef std::vector<double> valley_volt;
 
 c_vlogic :: c_vlogic(){}
 
 c_vlogic :: ~c_vlogic(){}
 
+//allows access to logic gates class
 c_valley valley;
 
-
+//2b  half adder
 valley_volt c_vlogic :: vnand_half_adder(double V1, double V2)
 {
   valley_volt S4(2);
-  S4 = valley.vnand(V1, V2, V_ref, V_S);
+  S4 = valley.vnand(V1, V2, Vref_, V_S);
   double temp = S4[0];
   
   valley_volt S1(2);
-  S1 = valley.vnand(V1, temp, V_ref, V_S);
+  S1 = valley.vnand(V1, temp, Vref_, V_S);
   double temp1 = S1[0];
   
   valley_volt S2(2);
-  S2  = valley.vnand(V2, temp, V_ref, V_S);
+  S2  = valley.vnand(V2, temp, Vref_, V_S);
   double temp2 = S2[0];
   
   valley_volt S(2);
-  S = valley.vnand(temp1, temp2, V_ref, V_S);
+  S = valley.vnand(temp1, temp2, Vref_, V_S);
   
   valley_volt C(2);
   
-  C = valley.vnand(temp, temp, V_ref, V_S);  
+  C = valley.vnand(temp, temp, Vref_, V_S);  
   
   for(int i = 0; i<2; i++) S.insert(S.end(),C[i]);
   
   return S;
 }
 
-
-
+//2b full adder
 valley_volt c_vlogic :: vnand_full_adder(double V1, double V2, double V3)
 {
   valley_volt Vhalf(4);
@@ -59,7 +64,7 @@ valley_volt c_vlogic :: vnand_full_adder(double V1, double V2, double V3)
   double C2 = Vfull[2];
   
   valley_volt Vcarry(2);
-  Vcarry = valley.vor(C1, C2, V_ref, V_S);
+  Vcarry = valley.vor(C1, C2, Vref_, V_S);
   
   valley_volt Vreturn(3);
   
@@ -70,19 +75,19 @@ valley_volt c_vlogic :: vnand_full_adder(double V1, double V2, double V3)
   return Vreturn; 
 }
 
-
-
+//8bit adder currently, but could be easily converted to Nb as calls 
+//depend on arch_, but the reverse check is currently 8b only.
 valley_volt c_vlogic :: vnand_8bit_adder(valley_volt N1, valley_volt N2)
 {
-  if(N1.size()!=16)
+  if(N1.size()!=2*arch_)
    {
-     std::cout<<"Invalid number format N1. Should be valley 8b.";
+     std::cout<<"Invalid number format N1. Should be valley "<<arch_<<"b";
      exit(EXIT_FAILURE);
    }
   
-  if(N2.size()!=16)
+  if(N2.size()!=2*arch_)
    {
-     std::cout<<"Invalid number format N2. Should be valley 8b.";
+     std::cout<<"Invalid number format N2. Should be valley "<<arch_<<"b";
      exit(EXIT_FAILURE);
    }
 
@@ -90,35 +95,35 @@ valley_volt c_vlogic :: vnand_8bit_adder(valley_volt N1, valley_volt N2)
   double temp1;
   double temp2;
 
-  temp = N1[14];
-  temp1 = N2[14];
+  temp = N1[2*arch_-2];
+  temp1 = N2[2*arch_-2];
 
   valley_volt Vhalf(4);
   Vhalf = vnand_half_adder(temp, temp1);
   temp2 = Vhalf[2];
-  valley_volt Cout(8);
-  Cout[7] = temp2; 
-  valley_volt Nout(16);
+  valley_volt Cout(arch_);
+  Cout[arch_-1] = temp2; 
+  valley_volt Nout(2*arch_);
   
-  Nout[14] = Vhalf[0];
-  Nout[15] = Vhalf[1];
+  Nout[2*arch_-2] = Vhalf[0];
+  Nout[2*arch_-1] = Vhalf[1];
 
-  for(int i = 0; i< 7; i++)
+  for(int i = 0; i< arch_-1; i++)
   {
-    temp = N1[12-2*i];
-    temp1 = N2[12-2*i];
+    temp = N1[2*arch_-4-2*i];
+    temp1 = N2[2*arch_-4-2*i];
 
     valley_volt Vfull(3);
     
     Vfull = vnand_full_adder(temp, temp1, temp2);
     
     temp2 = Vfull[2];
-    Cout[6-i]=temp2;
-    Nout[12-2*i] = Vfull[0];
-    Nout[13-2*i] = Vfull[1];
+    Cout[arch_-2-i]=temp2;
+    Nout[2*arch_-4-2*i] = Vfull[0];
+    Nout[2*arch_-3-2*i] = Vfull[1];
   }
 
- for(int i = 0; i< 8; i++) Nout.insert(Nout.end(),Cout[i]); 
+ for(int i = 0; i< arch_; i++) Nout.insert(Nout.end(),Cout[i]); 
 
  return Nout;
 }

@@ -3,10 +3,15 @@
 #include<vector>
 #include"gates.h"
 
+/*These are the available logic gates. Most other gates can be created by combining these core gates
+ * They are all reversible and can be implemented like classical gates.*/
+
+//defines the valley current variable type
 typedef std::vector<double> valley_volt;
 
 c_valley :: c_valley(){}
 
+//not gate
 valley_volt c_valley :: vnot(double V_G1, double V_S)
 {
   valley_volt V_out(2);
@@ -26,11 +31,13 @@ valley_volt c_valley :: vnot(double V_G1, double V_S)
   }
 }
 
+//and gate
 void* c_valley :: vand()
 {
 
 }
 
+//nand gate
 valley_volt c_valley :: vnand(double V_G1, double V_G2, double V_S, double V_ref)
 {
   
@@ -69,6 +76,7 @@ valley_volt c_valley :: vnand(double V_G1, double V_G2, double V_S, double V_ref
   return V_out;
 }
 
+//or gate
 valley_volt c_valley :: vor(double V_G1, double V_G2, double V_S, double V_ref)
 {
   valley_volt Vout(2);
@@ -98,6 +106,7 @@ valley_volt c_valley :: vor(double V_G1, double V_G2, double V_S, double V_ref)
   return Vout;
 }
 
+//nand based xor gate
 valley_volt c_valley :: vxor(double V_G1, double V_G2, double V_S, double V_ref)
 {
   valley_volt v1(2);
