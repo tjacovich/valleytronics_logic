@@ -69,9 +69,33 @@ valley_volt c_valley :: vnand(double V_G1, double V_G2, double V_S, double V_ref
   return V_out;
 }
 
-void* c_valley :: vor()
+valley_volt c_valley :: vor(double V_G1, double V_G2, double V_S, double V_ref)
 {
+  valley_volt Vout(2);
+  valley_volt Vt;
+  Vt = vnot(V_G1,V_S);
+  double Vtest = V_G2-V_ref;
+  if(Vt[0]==0)
+   {
+     Vout[0]=10;
+     if(Vtest==0) Vout[1]=0;
+     else Vout[1]=-1;
+   }
 
+  else 
+  {
+    if(Vtest==0)
+    {
+      Vout[0]=10;
+      Vout[1]=1;
+    }
+    else
+    {
+      Vout[0]=0;
+      Vout[1]=0;
+    }
+  }
+  return Vout;
 }
 
 void* c_valley :: vxor()

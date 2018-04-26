@@ -14,13 +14,13 @@ typedef std::vector<double> valley_volt;
 typedef std::vector<double> input_val;
 
 c_vlogic vlogic;
-
+c_valley valley_t;
 int main()
 {
 
   // input_val n1(arch_) = 1;
   // input_val n2(arch_) = 0;
-  double n1 = 0;
+  double n1 = 1;
   double n2 = 0; 
   
   valley_volt inputs(2);
@@ -29,6 +29,10 @@ int main()
   
   valley_volt output(4);
   output = vlogic.vnand_half_adder(inputs0,inputs1);
+  
+  valley_volt test(2);
+  test = valley_t.vor(inputs0, inputs1, Vref_, Vref_);
+  for(int k= 0; k<2; k++) std::cout<<test[k]<<"\n"; 
 
   for(int i=0; i<2; i++) std::cout<<output[i]<<"\n"; 
   for(int j=2; j<4; j++) std::cout<<output[j]<<"\n"; 
