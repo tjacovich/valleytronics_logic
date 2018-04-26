@@ -36,9 +36,7 @@ dec_ray c_num_ops :: recover_input(valley_volt Nout)
   {
     double temp;
     temp = Nout[2*j]/Vref_+Nout[2*j+1]+Nout[16+j]/Vref_;
-    
-    std::cout<<temp;
-    
+     
     if(temp == 0)
     {
       if(Nout[2*j]==0)

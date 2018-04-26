@@ -8,9 +8,7 @@
 #include "gates.h"
 #include "logic.h"
 #include "number_ops.h"
-
-#define Vref_ 10.
-#define arch_ 8
+#include "parameters.h"
 
 //Defines vector objects in a safe and efficient way.
 typedef std::vector<double> valley_volt;
