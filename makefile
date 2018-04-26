@@ -34,13 +34,13 @@ CPPFLAGS = -Wall -g -O0 #-march=native -mtune=native #-ftree-parallelize-loops=4
 
 ################################################################################
 
-SOURCE  = adder_example.cpp gates.cpp logic.cpp
+SOURCE  = adder_example.cpp gates.cpp logic.cpp number_ops.cpp
 
 OBJECTS = ${SOURCE:.cpp=.o}                           
 
 ################################################################################
 
-ADDER_O = gates.o logic.o adder_example.o\
+ADDER_O = gates.o logic.o number_ops.o adder_example.o\
 
 
 ################################################################################

@@ -1,1 +1,0 @@
-g++  -Wall -O3 -march=native -mtune=native -ftree-parallelize-loops=4   -c -o logic.o logic.cpp

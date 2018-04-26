@@ -96,7 +96,8 @@ valley_volt c_vlogic :: vnand_8bit_adder(valley_volt N1, valley_volt N2)
   valley_volt Vhalf(4);
   Vhalf = vnand_half_adder(temp, temp1);
   temp2 = Vhalf[2];
- 
+  valley_volt Cout(8);
+  Cout[7] = temp2; 
   valley_volt Nout(16);
   
   Nout[14] = Vhalf[0];
@@ -112,10 +113,12 @@ valley_volt c_vlogic :: vnand_8bit_adder(valley_volt N1, valley_volt N2)
     Vfull = vnand_full_adder(temp, temp1, temp2);
     
     temp2 = Vfull[2];
-
+    Cout[6-i]=temp2;
     Nout[12-2*i] = Vfull[0];
     Nout[13-2*i] = Vfull[1];
   }
-  
+
+ for(int i = 0; i< 8; i++) Nout.insert(Nout.end(),Cout[i]); 
+
  return Nout;
 }
