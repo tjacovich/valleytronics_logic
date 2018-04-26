@@ -4,30 +4,33 @@
 #include <vector>
 #include <algorithm>
 
-#define V_ref = 10
-
-#include "logic.h"
 #include "gates.h"
-#define arch_ = 8
+#include "logic.h"
+
+#define Vref_ 10.
+#define arch_ 8
+
 typedef std::vector<double> valley_volt;
 typedef std::vector<double> input_val;
 
+c_vlogic vlogic;
+
 int main()
 {
+
   // input_val n1(arch_) = 1;
   // input_val n2(arch_) = 0;
-  int n1 = 1;
-  int n2 = 0; 
+  double n1 = 0;
+  double n2 = 1; 
   
   valley_volt inputs(2);
+  double inputs0 = n1*10;
+  double inputs1 = n1*10; 
   
-  inputs[0]=n1*V_ref;
-  inputs[1]=n2*V_ref;
-  
-  valley_volt output(4) = c_vlogic.vnand_half_adder(inputs[0],inputs[1]);
+  valley_volt output(4);
+  output = vlogic.vnand_half_adder(inputs0,inputs1);
 
-  for(int i=0; i<4, i++) cout<<output[i]; 
-
+  for(int i=0; i<2; i++) std::cout<<output[i]<<" "<<output[i+1]<<"\n"; 
+  std::cout<<"\n";
   return 0;
-
 }
