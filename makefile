@@ -55,5 +55,5 @@ adder: ${ADDER_O}
 all: adder
 
 clean:                                                
-	rm -f *.o
+	rm -f *.o adder
 

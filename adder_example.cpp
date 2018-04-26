@@ -27,29 +27,60 @@ int main(int argc, char *argv[])
     exit(EXIT_FAILURE);
   }
   
+  for(int t = 0; t<5; t++) std::cout<<"\n"; 
   std::cout<<"First we demonstrate a 2b Full adder\n";
   
   //Bit value setting
-  double n1 = 1;
-  double n2 = 0;
-  double n3 = 0; 
+  double n1;
+  double n2;
+  double n3;
   
-  //Converting to voltage levels
-  double inputs0 = n1*Vref_;
-  double inputs1 = n2*Vref_; 
-  double inputs2 = n3*Vref_;
+  std::cout<<"A | B | Cin | Cout | S | V \n";
   
-  std::cout<<"Bit A is "<<n1<<"\n";
-  std::cout<<"Bit B is "<<n2<<"\n";
-  std::cout<<"Bit C is "<<n3<<"\n";
+  for(int i = 0; i < 2; i++)
+  { 
+    n1=i;
+    for(int j = 0; j<2; j++)
+    { 
+      n2=j;
+      for(int k = 0; k<2; k++)
+      { 
+	n3=k;
+        //Converting to voltage levels
+        double inputs0 = n1*Vref_;
+        double inputs1 = n2*Vref_; 
+        double inputs2 = n3*Vref_;
+  
+  	valley_volt fullout(3);//full_adder returns a 3 entry valley_vector
+  
+  	fullout = vlogic.vnand_full_adder(inputs0, inputs1, inputs2);
+        std::cout<<n1<<" | "<<n2<<" |  "<<n3<<"  |  "<<fullout[2]/Vref_<<"   | "<<fullout[0]/Vref_<<" | "<<fullout[1]<<"\n"; 
+      }
+    }
+  }  
 
-  valley_volt fullout(3);//full_adder returns a 3 entry valley_vector
+  for(int t = 0; t<3; t++) std::cout<<"\n"; 
+  std::cout<<"And the half-adder\n";
   
-  fullout = vlogic.vnand_full_adder(inputs0, inputs1, inputs2);
+  std::cout<<"A | B | C | S | V \n";
   
-  std::cout<<"S = "<<fullout[0]/Vref_<<"  C = "<<fullout[2]/Vref_<<"\n"; 
-  std::cout<<"V = "<<fullout[1]<<"\n"; 
+  for(int i = 0; i < 2; i++)
+  { 
+    n1=i;
+    for(int j = 0; j<2; j++)
+    { 
+      n2=j;
+        //Converting to voltage levels
+        double inputs0 = n1*Vref_;
+        double inputs1 = n2*Vref_; 
   
+  	valley_volt fullout(3);//full_adder returns a 3 entry valley_vector
+  
+  	fullout = vlogic.vnand_half_adder(inputs0, inputs1);
+        std::cout<<n1<<" | "<<n2<<" | "<<fullout[2]/Vref_<<" | "<<fullout[0]/Vref_<<" | "<<fullout[1]<<"\n"; 
+      }
+  }  
+  std::cout<<"\n";
   std::cout<<"\n Now we perform a Full 8b add of your specified numbers and reverse it\n";
     
   valley_volt N1(2*arch_);//Vector for Binary A
@@ -80,12 +111,12 @@ int main(int argc, char *argv[])
   }
   
   //writing binary and dec numbers to std out
-  std::cout<<"N1 "; 
+  std::cout<<"N1   "; 
   for(int i = 0; i<8; i++) std::cout<<N1[2*i]/10<<" ";
   std::cout<<argv[1];
   std::cout<<"\n";
 
-  std::cout<<"N2 "; 
+  std::cout<<"N2   "; 
   for(int i = 0; i<8; i++) std::cout<<N2[2*i]/10<<" ";
   std::cout<<argv[2];
   std::cout<<"\n";
@@ -109,15 +140,14 @@ int main(int argc, char *argv[])
   std::cout<<nout;
   std::cout<<"\n";
 
+  std::cout<<"Cout "; 
+  for(int i = 0; i<8; i++) std::cout<<Nout[2*arch_+i]/Vref_<<" ";
+  std::cout<<"\n";
   std::cout<<"Sout "; 
   for(int i = 0; i<8; i++) std::cout<<Nout[2*i+1]<<" ";
   std::cout<<"\n";
 
-  std::cout<<"Cout = "; 
-  for(int i = 0; i<8; i++) std::cout<<Nout[2*arch_+i]/Vref_<<" ";
-  std::cout<<"\n";
-
-  
+  std::cout<<" \n";
 
   std::cout<<"Now to verify the calculation is reversible.\n";
 
