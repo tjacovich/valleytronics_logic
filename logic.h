@@ -14,6 +14,7 @@ class c_vlogic
    c_vlogic();  
    ~c_vlogic();
    valley_volt vnand_half_adder(double V1, double V2);
+   valley_volt vnand_full_adder(double V1, double V2, double V3);
 };
 
 #endif //LOGIC_H
