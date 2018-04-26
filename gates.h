@@ -11,7 +11,7 @@ class c_valley
   public:	
   	c_valley();
   	~c_valley();
-  	double vnot(double V_G1, double V_S);
+  	valley_volt vnot(double V_G1, double V_S);
   	void* vand();
   	valley_volt vnand(double V_G1, double V_G2, double VS, double V_ref);
   	void* vor();

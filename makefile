@@ -25,7 +25,7 @@ LDFLAGS = -L -L/usr/lib -lm
 
 # Compiler flags
 #CPPFLAGS = -I/usr/include/mpi -Wall -O0 -g -fopenmp
-CPPFLAGS = -Wall -O3 -march=native -mtune=native #-ftree-parallelize-loops=4 
+CPPFLAGS = -Wall -g -O0 #-march=native -mtune=native #-ftree-parallelize-loops=4 
   # -Wall all warnings on
   # -O3 Optimization level 3 ( -O0 needed for debugging purposes )
   # ad -g to compile for debugging purposes. Debug code using valgrind
