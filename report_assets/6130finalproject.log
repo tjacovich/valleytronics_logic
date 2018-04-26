@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2018.3.4)  23 APR 2018 23:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2018.3.4)  26 APR 2018 15:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -837,15 +837,9 @@ thkerncmss.
 
 ] [3
 
-]
-<AEGIS.png, id=141, 1218.5525pt x 959.585pt>
-File: AEGIS.png Graphic file (type png)
-<use AEGIS.png>
-Package pdftex.def Info: AEGIS.png  used on input line 63.
-(pdftex.def)             Requested size: 243.70618pt x 191.91359pt.
- [4
+] [4
 
- <./AEGIS.png>] [5
+] [5
 
 ]
 \tf@nav=\write6
@@ -857,32 +851,32 @@ Package pdftex.def Info: AEGIS.png  used on input line 63.
 \tf@snm=\write8
 \openout8 = `6130finalproject.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 71.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 71.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 69.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 69.
 
 (./6130finalproject.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 71.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 71.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 69.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 69.
 Package rerunfilecheck Info: File `6130finalproject.out' has not changed.
-(rerunfilecheck)             Checksum: D30D55A5A7CB2585DF67E5E7FD19C466;316.
+(rerunfilecheck)             Checksum: 2974872241F5A9AA72E97E47CD4552CD;287.
  ) 
 Here is how much of TeX's memory you used:
- 17137 strings out of 492982
- 325309 string characters out of 6138580
+ 17129 strings out of 492982
+ 325218 string characters out of 6138580
  398315 words of memory out of 5000000
- 20294 multiletter control sequences out of 15000+600000
- 14846 words of font info for 54 fonts, out of 8000000 for 9000
+ 20289 multiletter control sequences out of 15000+600000
+ 14490 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,16n,65p,802b,557s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmssi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmsy10.pfb>
-Output written on 6130finalproject.pdf (5 pages, 176748 bytes).
+/amsfonts/cm/cmss9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+sy10.pfb>
+Output written on 6130finalproject.pdf (5 pages, 64696 bytes).
 PDF statistics:
- 228 PDF objects out of 1000 (max. 8388607)
- 202 compressed objects within 3 object streams
+ 225 PDF objects out of 1000 (max. 8388607)
+ 201 compressed objects within 3 object streams
  16 named destinations out of 1000 (max. 500000)
- 106 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 101 words of extra memory for PDF output out of 10000 (max. 10000000)
 

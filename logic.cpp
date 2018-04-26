@@ -122,3 +122,18 @@ valley_volt c_vlogic :: vnand_8bit_adder(valley_volt N1, valley_volt N2)
 
  return Nout;
 }
+
+valley_volt c_vlogic :: VSR_nand_latch(double R, double S, valley_volt Q, valley_volt Qbar)
+{
+  valley_volt vout(4); 
+  valley_volt v1(2);
+  valley_volt v2(2);
+ 
+  temp = Q[0];
+  temp1 = Qbar[0];
+
+  v1 = valley.vnand(Qbar, R, temp, temp);
+  v2 = valley.vnand(Q, S, temp1, temp1);
+
+  return vout;
+}
