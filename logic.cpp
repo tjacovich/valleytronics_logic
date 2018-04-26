@@ -129,11 +129,11 @@ valley_volt c_vlogic :: VSR_nand_latch(double R, double S, valley_volt Q, valley
   valley_volt v1(2);
   valley_volt v2(2);
  
-  temp = Q[0];
-  temp1 = Qbar[0];
+  double temp = Q[0];
+  double temp1 = Qbar[0];
 
-  v1 = valley.vnand(Qbar, R, temp, temp);
-  v2 = valley.vnand(Q, S, temp1, temp1);
+  v1 = valley.vnand(temp, R, temp, temp);
+  v2 = valley.vnand(temp1, S, temp1, temp1);
 
   return vout;
 }
