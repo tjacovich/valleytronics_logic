@@ -32,8 +32,13 @@ valley_volt c_valley :: vnot(double V_G1, double V_S)
 }
 
 //and gate
-void* c_valley :: vand()
+valley_volt c_valley :: vand(double V_G1, double V_G2, double V_S, double V_ref)
 {
+  valley_volt v1(2);
+  v1 = vnand(V_G1, V_G2, V_S, V_ref);
+  double temp = v1[0];
+  v1 = vnot(temp, V_S);
+  return v1;
 
 }
 
