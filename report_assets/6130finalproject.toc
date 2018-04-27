@@ -1,5 +1,8 @@
 \beamer@sectionintoc {1}{Introduction}{2}{0}{1}
-\beamer@subsectionintoc {1}{1}{What is Valleytronics}{2}{0}{1}
-\beamer@subsectionintoc {1}{2}{QM}{3}{0}{1}
-\beamer@sectionintoc {2}{Reversible}{4}{0}{2}
-\beamer@subsectionintoc {2}{1}{Tamper-Evident Processing}{5}{0}{2}
+\beamer@subsectionintoc {1}{1}{QM}{3}{0}{1}
+\beamer@sectionintoc {2}{Reversible}{5}{0}{2}
+\beamer@sectionintoc {3}{The Plan}{6}{0}{3}
+\beamer@sectionintoc {4}{The Reality}{7}{0}{4}
+\beamer@sectionintoc {5}{valleytronics\_logic}{8}{0}{5}
+\beamer@sectionintoc {6}{R and C}{9}{0}{6}
+\beamer@sectionintoc {7}{References}{10}{0}{7}

@@ -1,16 +1,16 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2018.3.4)  26 APR 2018 15:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2017.12.6)  26 APR 2018 22:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **6130finalproject.tex
 (./6130finalproject.tex
 LaTeX2e <2017-04-15>
-Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
+Babel <3.15> and hyphenation patterns for 84 language(s) loaded.
 (/usr/share/texmf-dist/tex/latex/beamer/beamer.cls
-Document Class: beamer 2018/02/20 v3.50 A class for typesetting presentations
+Document Class: beamer 2017/11/10 v3.44 A class for typesetting presentations
 (/usr/share/texmf-dist/tex/latex/beamer/beamerbasemodes.sty
 (/usr/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2018/02/11 v2.5e e-TeX tools for LaTeX (JAW)
+Package: etoolbox 2017/01/02 v2.4 e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count79
 )
 \beamer@tempbox=\box26
@@ -120,7 +120,7 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 Package graphics Info: Driver file: pdftex.def on input line 99.
 
 (/usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+File: pdftex.def 2017/06/24 v1.0g Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen126
 \Gin@req@width=\dimen127
@@ -323,7 +323,7 @@ Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 ))
 (/usr/share/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
+Package: hyperref 2017/03/14 v6.85a Hypertext links for LaTeX
 
 (/usr/share/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
 Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
@@ -346,7 +346,7 @@ Package etexcmds Info: Could not find \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO
+Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
@@ -378,52 +378,54 @@ Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 \Hy@pagecounter=\count120
 
 (/usr/share/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
+File: pd1enc.def 2017/03/14 v6.85a Hyperref: PDFDocEncoding definition (HO)
 )
 \Hy@SavedSpaceFactor=\count121
 
 (/usr/share/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
-Package hyperref Info: Option `bookmarks' set `true' on input line 4383.
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 4383.
-Package hyperref Info: Option `implicit' set `false' on input line 4383.
-Package hyperref Info: Hyper figures OFF on input line 4509.
-Package hyperref Info: Link nesting OFF on input line 4514.
-Package hyperref Info: Hyper index ON on input line 4517.
-Package hyperref Info: Plain pages OFF on input line 4524.
-Package hyperref Info: Backreferencing OFF on input line 4529.
+Package hyperref Info: Option `bookmarks' set `true' on input line 4374.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 4374.
+Package hyperref Info: Option `implicit' set `false' on input line 4374.
+Package hyperref Info: Hyper figures OFF on input line 4498.
+Package hyperref Info: Link nesting OFF on input line 4503.
+Package hyperref Info: Hyper index ON on input line 4506.
+Package hyperref Info: Plain pages OFF on input line 4513.
+Package hyperref Info: Backreferencing OFF on input line 4518.
 Package hyperref Info: Implicit mode OFF; no redefinition of LaTeX internals.
-Package hyperref Info: Bookmarks ON on input line 4762.
+Package hyperref Info: Bookmarks ON on input line 4751.
 \c@Hy@tempcnt=\count122
 
 (/usr/share/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 5115.
+LaTeX Info: Redefining \url on input line 5104.
 \XeTeXLinkMargin=\dimen164
 \Fld@menulength=\count123
 \Field@Width=\dimen165
 \Fld@charsize=\dimen166
-Package hyperref Info: Hyper figures OFF on input line 6369.
-Package hyperref Info: Link nesting OFF on input line 6374.
-Package hyperref Info: Hyper index ON on input line 6377.
-Package hyperref Info: backreferencing OFF on input line 6384.
-Package hyperref Info: Link coloring OFF on input line 6389.
-Package hyperref Info: Link coloring with OCG OFF on input line 6394.
-Package hyperref Info: PDF/A mode OFF on input line 6399.
-LaTeX Info: Redefining \ref on input line 6439.
-LaTeX Info: Redefining \pageref on input line 6443.
+Package hyperref Info: Hyper figures OFF on input line 6358.
+Package hyperref Info: Link nesting OFF on input line 6363.
+Package hyperref Info: Hyper index ON on input line 6366.
+Package hyperref Info: backreferencing OFF on input line 6373.
+Package hyperref Info: Link coloring OFF on input line 6378.
+Package hyperref Info: Link coloring with OCG OFF on input line 6383.
+Package hyperref Info: PDF/A mode OFF on input line 6388.
+LaTeX Info: Redefining \ref on input line 6428.
+LaTeX Info: Redefining \pageref on input line 6432.
 \Hy@abspage=\count124
 
 
 Package hyperref Message: Stopped early.
 
 )
-Package hyperref Info: Driver (autodetected): hpdftex.
- (/usr/share/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
+
+Package hyperref Message: Driver (autodetected): hpdftex.
+
+(/usr/share/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2017/03/14 v6.85a Hyperref driver for pdfTeX
 \Fld@listcount=\count125
 \c@bookmark@seq@number=\count126
 
@@ -453,10 +455,11 @@ Package: sansmathaccent 2013/03/28
 Package: filehook 2011/10/12 v0.5d Hooks for input files
 )))
 (/usr/share/texmf-dist/tex/latex/beamer/beamerbasetranslator.sty
-(/usr/share/texmf-dist/tex/latex/translator/translator.sty
-Package: translator 2018/01/04 v1.12 Easy translation of strings in LaTeX
-))
-(/usr/share/texmf-dist/tex/latex/beamer/beamerbasemisc.sty)
+(/usr/share/texmf-dist/tex/latex/beamer/translator/translator.sty
+Package: translator 2010/06/12 ver 1.10
+
+(/usr/share/texmf-dist/tex/latex/beamer/translator/translator-language-mappings
+.tex))) (/usr/share/texmf-dist/tex/latex/beamer/beamerbasemisc.sty)
 (/usr/share/texmf-dist/tex/latex/beamer/beamerbasetwoscreens.sty)
 (/usr/share/texmf-dist/tex/latex/beamer/beamerbaseoverlay.sty
 \beamer@argscount=\count127
@@ -599,7 +602,7 @@ LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
 )
 (/usr/share/texmf-dist/tex/latex/amscls/amsthm.sty
-Package: amsthm 2017/10/31 v2.20.4
+Package: amsthm 2015/03/04 v2.20.2
 \thm@style=\toks37
 \thm@bodyfont=\toks38
 \thm@headfont=\toks39
@@ -613,23 +616,30 @@ Package: amsthm 2017/10/31 v2.20.4
 \c@theorem=\count153
 )
 (/usr/share/texmf-dist/tex/latex/beamer/beamerbasethemes.sty))
-(/usr/share/texmf-dist/tex/latex/beamer/beamerthemedefault.sty
-(/usr/share/texmf-dist/tex/latex/beamer/beamerfontthemedefault.sty)
-(/usr/share/texmf-dist/tex/latex/beamer/beamercolorthemedefault.sty)
-(/usr/share/texmf-dist/tex/latex/beamer/beamerinnerthemedefault.sty
+(/usr/share/texmf-dist/tex/latex/beamer/themes/theme/beamerthemedefault.sty
+(/usr/share/texmf-dist/tex/latex/beamer/themes/font/beamerfontthemedefault.sty)
+
+(/usr/share/texmf-dist/tex/latex/beamer/themes/color/beamercolorthemedefault.st
+y)
+(/usr/share/texmf-dist/tex/latex/beamer/themes/inner/beamerinnerthemedefault.st
+y
 \beamer@dima=\dimen188
 \beamer@dimb=\dimen189
 )
-(/usr/share/texmf-dist/tex/latex/beamer/beamerouterthemedefault.sty)))
-(/usr/share/texmf-dist/tex/latex/beamer/beamerthemePaloAlto.sty
-(/usr/share/texmf-dist/tex/latex/beamer/beamerouterthemesidebar.sty
+(/usr/share/texmf-dist/tex/latex/beamer/themes/outer/beamerouterthemedefault.st
+y)))
+(/usr/share/texmf-dist/tex/latex/beamer/themes/theme/beamerthemePaloAlto.sty
+(/usr/share/texmf-dist/tex/latex/beamer/themes/outer/beamerouterthemesidebar.st
+y
 \beamer@sidebarwidth=\dimen190
 \beamer@headheight=\dimen191
 )
-(/usr/share/texmf-dist/tex/latex/beamer/beamerinnerthemerounded.sty)
-(/usr/share/texmf-dist/tex/latex/beamer/beamercolorthemeorchid.sty)
-(/usr/share/texmf-dist/tex/latex/beamer/beamercolorthemewhale.sty))
-(/usr/share/texmf-dist/tex/latex/float/float.sty
+(/usr/share/texmf-dist/tex/latex/beamer/themes/inner/beamerinnerthemerounded.st
+y)
+(/usr/share/texmf-dist/tex/latex/beamer/themes/color/beamercolorthemeorchid.sty
+)
+(/usr/share/texmf-dist/tex/latex/beamer/themes/color/beamercolorthemewhale.sty)
+) (/usr/share/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count154
 \float@exts=\toks43
@@ -791,28 +801,28 @@ LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
 ut line 23.
 
-(/usr/share/texmf-dist/tex/latex/translator/translator-basic-dictionary-English
-.dict
+(/usr/share/texmf-dist/tex/latex/beamer/translator/dicts/translator-basic-dicti
+onary/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
 )
-(/usr/share/texmf-dist/tex/latex/translator/translator-bibliography-dictionary-
-English.dict
+(/usr/share/texmf-dist/tex/latex/beamer/translator/dicts/translator-bibliograph
+y-dictionary/translator-bibliography-dictionary-English.dict
 Dictionary: translator-bibliography-dictionary, Language: English 
 )
-(/usr/share/texmf-dist/tex/latex/translator/translator-environment-dictionary-E
-nglish.dict
+(/usr/share/texmf-dist/tex/latex/beamer/translator/dicts/translator-environment
+-dictionary/translator-environment-dictionary-English.dict
 Dictionary: translator-environment-dictionary, Language: English 
 )
-(/usr/share/texmf-dist/tex/latex/translator/translator-months-dictionary-Englis
-h.dict
+(/usr/share/texmf-dist/tex/latex/beamer/translator/dicts/translator-months-dict
+ionary/translator-months-dictionary-English.dict
 Dictionary: translator-months-dictionary, Language: English 
 )
-(/usr/share/texmf-dist/tex/latex/translator/translator-numbers-dictionary-Engli
-sh.dict
+(/usr/share/texmf-dist/tex/latex/beamer/translator/dicts/translator-numbers-dic
+tionary/translator-numbers-dictionary-English.dict
 Dictionary: translator-numbers-dictionary, Language: English 
 )
-(/usr/share/texmf-dist/tex/latex/translator/translator-theorem-dictionary-Engli
-sh.dict
+(/usr/share/texmf-dist/tex/latex/beamer/translator/dicts/translator-theorem-dic
+tionary/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 ) (./6130finalproject.nav)
 LaTeX Font Info:    Try loading font information for U+msa on input line 24.
@@ -831,15 +841,261 @@ line 24.
 (/usr/share/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
-) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+)
+Overfull \hbox (7.78093pt too wide) has occurred while \output is active
+ []\OT1/cmss/m/n/6 valleytronics[]logic  
+ []
 
-] [2
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
-] [3
+]
+Overfull \hbox (7.78093pt too wide) has occurred while \output is active
+ []\OT1/cmss/m/n/6 valleytronics[]logic  
+ []
 
-] [4
+[2
 
-] [5
+]
+Overfull \hbox (7.78093pt too wide) has occurred while \output is active
+ []\OT1/cmss/m/n/6 valleytronics[]logic  
+ []
+
+[3
+
+]
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.70 \end{frame}
+                
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.70 \end{frame}
+                
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.70 \end{frame}
+                
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<gate_and_cones.png, id=167, 563.10374pt x 586.19pt>
+File: gate_and_cones.png Graphic file (type png)
+<use gate_and_cones.png>
+Package pdftex.def Info: gate_and_cones.png  used on input line 70. on input li
+ne 70.
+Package pdftex.def Info: Requested size: 140.77559pt x 146.54713pt on input lin
+e 70.
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.70 \end{frame}
+                
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.70 \end{frame}
+                
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.70 \end{frame}
+                
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.70 \end{frame}
+                
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.70 \end{frame}
+                
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.70 \end{frame}
+                
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<gate1.png, id=169, 375.4025pt x 489.83pt>
+File: gate1.png Graphic file (type png)
+<use gate1.png>
+Package pdftex.def Info: gate1.png  used on input line 70. on input line 70.
+Package pdftex.def Info: Requested size: 131.39284pt x 171.44305pt on input lin
+e 70.
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.70 \end{frame}
+                
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.70 \end{frame}
+                
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.70 \end{frame}
+                
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (16.37578pt too wide) in paragraph at lines 70--70
+[][]  
+ []
+
+
+Overfull \hbox (7.78093pt too wide) has occurred while \output is active
+ []\OT1/cmss/m/n/6 valleytronics[]logic  
+ []
+
+[4
+
+ <./gate_and_cones.png> <./gate1.png>]
+! Undefined control sequence.
+<recently read> \larrow 
+                        
+l.85 \end{frame}
+                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<full_gate.png, id=206, 518.93875pt x 540.0175pt>
+File: full_gate.png Graphic file (type png)
+<use full_gate.png>
+Package pdftex.def Info: full_gate.png  used on input line 85. on input line 85
+.
+Package pdftex.def Info: Requested size: 129.73436pt x 135.00404pt on input lin
+e 85.
+
+Overfull \vbox (15.93246pt too high) detected at line 85
+ []
+
+
+Overfull \hbox (7.78093pt too wide) has occurred while \output is active
+ []\OT1/cmss/m/n/6 valleytronics[]logic  
+ []
+
+[5
+
+ <./full_gate.png>]
+Overfull \hbox (7.78093pt too wide) has occurred while \output is active
+ []\OT1/cmss/m/n/6 valleytronics[]logic  
+ []
+
+[6
+
+]
+Overfull \hbox (7.78093pt too wide) has occurred while \output is active
+ []\OT1/cmss/m/n/6 valleytronics[]logic  
+ []
+
+[7
+
+]
+Overfull \hbox (7.78093pt too wide) has occurred while \output is active
+ []\OT1/cmss/m/n/6 valleytronics[]logic  
+ []
+
+[8
+
+]
+Overfull \hbox (7.78093pt too wide) has occurred while \output is active
+ []\OT1/cmss/m/n/6 valleytronics[]logic  
+ []
+
+[9
+
+]
+Overfull \hbox (7.78093pt too wide) has occurred while \output is active
+ []\OT1/cmss/m/n/6 valleytronics[]logic  
+ []
+
+[10
 
 ]
 \tf@nav=\write6
@@ -851,32 +1107,34 @@ thkerncmss.
 \tf@snm=\write8
 \openout8 = `6130finalproject.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 69.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 69.
-
-(./6130finalproject.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 69.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 69.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 164.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 164.
+ (./6130finalproject.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 164.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 164.
 Package rerunfilecheck Info: File `6130finalproject.out' has not changed.
-(rerunfilecheck)             Checksum: 2974872241F5A9AA72E97E47CD4552CD;287.
+(rerunfilecheck)             Checksum: 069BBFF2DB9EA723516A1E871E065F85;376.
  ) 
 Here is how much of TeX's memory you used:
- 17129 strings out of 492982
- 325218 string characters out of 6138580
- 398315 words of memory out of 5000000
- 20289 multiletter control sequences out of 15000+600000
- 14490 words of font info for 53 fonts, out of 8000000 for 9000
+ 17180 strings out of 492985
+ 326931 string characters out of 6138638
+ 396778 words of memory out of 5000000
+ 20303 multiletter control sequences out of 15000+600000
+ 15183 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,16n,65p,802b,557s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmss9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-sy10.pfb>
-Output written on 6130finalproject.pdf (5 pages, 64696 bytes).
+ssi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></us
+r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmtt12.pfb>
+Output written on 6130finalproject.pdf (10 pages, 336127 bytes).
 PDF statistics:
- 225 PDF objects out of 1000 (max. 8388607)
- 201 compressed objects within 3 object streams
- 16 named destinations out of 1000 (max. 500000)
- 101 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 453 PDF objects out of 1000 (max. 8388607)
+ 412 compressed objects within 5 object streams
+ 29 named destinations out of 1000 (max. 500000)
+ 140 words of extra memory for PDF output out of 10000 (max. 10000000)
 
